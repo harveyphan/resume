@@ -15,7 +15,14 @@ function initChulan() {
 
 // functions ------------------
 	"use strict";
-	
+
+  //------------------------------init Superslides-----------------------
+
+  $('#slides').superslides({
+    animation: 'fade',
+    play: 10000
+  });
+
 	$('h1.animtext').fitText(1.8,{minFontSize:'20px',maxFontSize:'72px'});
 	
 // counter ------------------
@@ -177,19 +184,6 @@ function initChulan() {
 	
 // OwlCarousel  ----------------------------------------	
 	
-	$("#services-carusel").owlCarousel({
-		navigation:true,
-		slideSpeed : 500,
-		pagination : false,
-		items : 3, 
-      	itemsDesktop : false,
-      	itemsDesktopSmall : [1200,2],
-      	itemsTablet: [979,2],
-      	itemsMobile : [740,1]
-		
-     });
-	
- 
 	$('#testimonials-slider').owlCarousel({
 		navigation : true,
 		pagination:true, 

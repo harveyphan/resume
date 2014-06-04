@@ -4,7 +4,7 @@
 <!--=============== basic  ===============-->
 
 	<meta charset="UTF-8">
-	<title>Chulan . Personal Portfolio & Resume Page</title>
+	<title>Thang Phan . Personal Portfolio & Resume Page</title>
 	<meta name="description" content="Your website description here">
 	<meta name="keywords" content="your, website, keywords, here">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -23,10 +23,7 @@
 	
 <!--=============== colors  ===============-->	
 
-	<link rel="alternate stylesheet" type="text/css" href="css/blue-style.css" title="blue" media="screen" />
 	<link rel="alternate stylesheet" type="text/css" href="css/green-style.css" title="green" media="screen" />
-	<link rel="alternate stylesheet" type="text/css" href="css/yellow-style.css" title="yellow" media="screen" />
-	<link rel="alternate stylesheet" type="text/css" href="css/orange-style.css" title="red" media="screen" />
 
 <!--=============== fonts  ===============-->
 
@@ -67,7 +64,7 @@
 					<li class="cur"><a href="#about" class="scroll-link transition">About</a></li>
 					<li><a href="#resume" class="scroll-link transition">Resume</a></li>
 					<li><a href="#work" class="scroll-link transition">Portfolio</a></li>
-					<li><a href="#services" class="scroll-link transition">Services</a></li>
+                    <li><a href="#testimonials" class="scroll-link transition">Testimonials</a></li>
 					<li><a href="#contacts" class="scroll-link transition">Contacts</a></li>
 				</ul>
 			</div>
@@ -77,14 +74,40 @@
 		<!--=============== text-ticker-holder ===============-->	
 			
 		<div class="text-ticker-holder">
-		
-			<div class="overlay"></div>
+
+            <div id="slides">
+
+                <ul class="slides-container">
+
+                    <!-- Slide 1 -->
+
+                    <li>
+                        <div style="background-image: url('images/bg/1.jpg');" class="slides-fullscreen-img"></div>
+                    </li>
+
+                    <!-- Slide 2 -->
+
+                    <li>
+                        <div style="background-image: url('images/bg/2.jpg');" class="slides-fullscreen-img"></div>
+                    </li>
+
+                    <!-- Slide 3 -->
+
+                    <li>
+                        <div style="background-image: url('images/bg/3.jpg');" class="slides-fullscreen-img"></div>
+                    </li>
+
+                </ul>
+
+            </div><!-- Slider end -->
+
+            <div class="overlay"></div>
 			<div class="container">
 				
 				<div class="anim-text-holder">
 				
-					<h1 class="animtext">Hi i am Jonathan Doe </h1>
-					<h3 class="animtext fade">Webdesigner & Web Developer from  USA</h3>
+					<h1 class="animtext">Hi i am Thang Phan </h1>
+					<h3 class="animtext fade">A Front End Developer With Passion Of Creative</h3>
 					
 					<div class="start-holder fade">
 					
@@ -109,13 +132,13 @@
 		<!--=============== left-sidebar ===============-->
 		
 		<div class="left-sidebar">
-			<a href="#intro" class="scroll-link logo"><img src="images/logo.png" alt=""></a>
+			<a href="#intro" class="scroll-link logo"><img src="images/myResume.png" alt=""></a>
 			<div class="desktop-screen-navigation" id="nav"> 
 					<ul>
 						<li class="current transition"><a href="#about" class="scroll-link transition">About</a></li>
 						<li class="transition"><a href="#resume" class="scroll-link transition">Resume</a></li>
 						<li class="transition"><a href="#work" class="scroll-link transition">Portfolio</a></li>
-						<li class="transition"><a href="#services" class="scroll-link transition">Services</a></li>
+						<li class="transition"><a href="#testimonials" class="scroll-link transition">Testimonials</a></li>
 						<li class="transition"><a href="#contacts" class="scroll-link transition">Contacts</a></li>
 					</ul>
 			</div>
@@ -139,20 +162,20 @@
 					<div class="grid-half right">
 					
 						<div class="photo-holder">
-							<img src="images/photo.jpg" alt="" class="respimg">
+							<img src="images/id.png" alt="" class="respimg">
 						</div>
 					
 					</div>
 									
 					<div class="grid-half right">
 					
-						<h3>Jonathan Doe</h3>
-						<h3 class="margin">Webdesigner & Web Developer from  USA</h3>
+						<h3>Thang Phan</h3>
+						<h3 class="margin">Front End Developer</h3>
 						<p>Ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo tempor dignissim at. My Philosophy Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
 						
 						<div class="clear"></div>
-						<a href="#work" class="button scroll-link transition">vivew my work</a>
+						<a href="#work" class="button scroll-link transition">view my work</a>
 						
 					</div>
 					
@@ -636,165 +659,6 @@
 	
 		<div class="clear"></div>
 
-		<!--=============== section services===============-->	
-		
-		<div id="services" class="sections">
-		
-			<div class="content">
-			
-				<div class="container animaper anim">
-				
-					<h4 class="margin">What i do </h4>	
-					<h2>Services</h2>
-					<div class="content-separator"><i class="fa fa-cogs"></i><span></span></div>
-		
-					<div id="services-carusel" class="owl-carousel">
-							
-						<!-- 1 item -->
-								
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-laptop"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Design</h4>
-									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-									<h5>WHAT i OFFER</h5>
-									<ul>
-										<li>Concept</li>
-										<li>Design</li>
-										<li>3D Modeling</li>
-										<li>Research</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">50$-600$</div>
-									
-								</div>
-								
-							</div>	
-							
-						</div>
-								
-						<!-- 2 item -->
-								
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-rocket"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Branding</h4>
-									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-									<h5>WHAT i OFFER</h5>
-									<ul>
-										<li>Concept</li>
-										<li>Design</li>
-										<li>Flayers</li>
-										<li>Research</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">20$-300$</div>
-									
-								</div>
-								
-							</div>
-								
-						</div>
-								
-						<!-- 3 item -->
-								
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-android"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Developement</h4>
-									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-									<h5>WHAT i OFFER</h5>
-									<ul>
-										<li>Develop</li>
-										<li>Design</li>
-										<li>3D Modeling</li>
-										<li>User inerface </li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">350$-1600$</div>
-									
-								</div>
-								
-							</div>
-								
-						</div>
-								
-						<!-- 4 item -->
-				
-						<div class="item">	
-						
-							<div class="services-box">
-							
-								<div class="icon-holder">
-									<i class="fa fa-camera"></i>
-								</div>
-								
-								<div class="services-box-info">
-								
-									<span class="services-decor"></span>
-									<h4>Photo</h4>
-									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-									<h5>WHAT i OFFER</h5>
-									<ul>
-										<li>Concept</li>
-										<li>Design</li>
-										<li>3D Modeling</li>
-										<li>Research</li>
-									</ul>
-									<div class="clear"></div>
-									<div class="price">10$-140$</div>
-									
-								</div>
-								
-							</div>	
-							
-						</div>
-			
-					</div>		
-
-				</div>	
-				
-			</div>
-		
-		</div>	<!--=============== section services  end===============-->	
-		
-		<!--=============== section order ===============-->
-			
-		<div id="order" class="sections">
-		
-			<div class="content">
-				<a href="#contact_form" class="button transition scroll-link">Get in touch</a>
-			</div>
-			
-			<div class="ordershadow"></div>
-		
-		</div>	<!--=============== section order end ===============-->
-
-		<div class="clear"></div>
 		
 		<!--=============== section testimonials ===============-->
 		
@@ -939,7 +803,7 @@
 										
 						</div>	
 						
-						<p>Chulan ©2014  All rights reserved.</p>
+						<p>Thang Phan ©2014  All rights reserved.</p>
 					
 					</div>
 					
@@ -950,30 +814,7 @@
 		</div><!--=============== content-holder end ===============-->	
 		
 	</div><!--=============== wrapper end ===============-->	
-<!--=============== Styleswitch Panel Only in Demo ===============-->
 
-<div class="show-panel"><i class="fa fa-cogs"></i></div>
-<div class="panel">
-	<h3>Options</h3>
-	<div class="panel-container">
-			<div class="options">
-				<h5>Switching color</h5>
-				<ul class="color-switch">
-					<li class="orange"><a href="#" rel="red" class="styleswitch"></a></li>
-					<li class="blue"><a href="#" rel="blue" class="styleswitch"></a></li>
-					<li class="green"><a href="#" rel="green" class="styleswitch"></a></li>
-					<li class="yellow"><a href="#" rel="yellow" class="styleswitch"></a></li>
-				</ul>
-			<div class="layout-holder">
-			<h5>Layout type</h5>
-			<a href="#" class="layout acttype">Static</a>	
-			<a href="../bg/index.html" class="layout">Slider</a>	
-			<a href="../video/index.html" class="layout">Video</a>	
-			</div>		
-			</div>
-	</div>
-
-</div><!--panel end -->		
 </div><!--=============== main end ===============-->	
  
 <!--=============== javascript ===============-->
@@ -993,8 +834,7 @@
 	<script type="text/javascript" src="js/jquery.fittext.js"></script>
 	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="js/superslides.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-		<!--Styleswitch-->
-	<script src="js/styleswitch.js" type="text/javascript"></script>	
 </body>
 </html>
