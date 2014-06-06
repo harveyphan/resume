@@ -14,6 +14,7 @@
 	++++Footer++++
 	++++CSS Animation++++
 	++++Media++++
+	++++Fonts++++
 */
 
 /* ====================
@@ -27,7 +28,7 @@ html{
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'proxima_nova_rgregular', "Helvetica Neue", Arial, sans-serif;
 	font-weight: 400;
 	font-size: 1em;
 	color: #666;
@@ -44,39 +45,38 @@ body{
 Typography
 --------------------------------------------------------------*/
 h1 {
+  font-family: 'proxima_nova_blblack', "Helvetica Neue", Arial, sans-serif;
 	font-size: 4.46666666667em;
 	text-transform: uppercase;
 	letter-spacing: 0.20em;
-	font-weight: 400;
-	line-height: 1.17em;	
+	line-height: 1.17em;
 }
 h2 {
+  font-family: 'proxima_nova_blblack', "Helvetica Neue", Arial, sans-serif;
 	font-size: 2.2em;
 	letter-spacing: 0.10em;
-	font-weight: bold;
 	text-transform:uppercase;
 }
 h3 {
+  font-family: 'proxima_nova_ltsemibold', "Helvetica Neue", Arial, sans-serif;
 	font-size: 1em;
 	text-transform: uppercase;
 	letter-spacing: 0.20em;
-	font-weight: 200;
 }
 h4 {
+  font-family: 'proxima_nova_ltsemibold', "Helvetica Neue", Arial, sans-serif;
 	font-size: 0.9em;
 	text-transform: uppercase;
-	font-weight: 200;	
 }
 h5 {
 	font-size: 0.8em;
-	font-weight: 200;
 }
 h6 {
 	font-size: 0.6em;
 	text-transform: uppercase;
-	font-weight: 200;
 }
 h1.animtext{
+  font-family: 'proxima_nova_rgbold', "Helvetica Neue", Arial, sans-serif;
 	margin-top:35%;
 	position:relative;
 	color:#fff;
@@ -495,6 +495,9 @@ About
 	margin-bottom:20px;
 }
 #about h3 {
+  font-family: 'proxima_nova_blblack';
+  font-size: 1.5em;
+  letter-spacing: normal;
 	text-align:left;
 	margin-bottom:20px;
 }
@@ -689,6 +692,9 @@ Skills
 .piechart-holder {
 	margin-top:50px;
 	display:none;
+}
+.piechart-holder .piechart {
+  margin-bottom: 30px;
 }
 .piechart-holder p {
 	text-align:center !important;
@@ -1535,10 +1541,10 @@ Contacts
 .contact-form p {
 	color:#fff;
 	max-width:600px;
-	text-align:right;
+	text-align:left;
 	font-size:0.8em;
-	float: right;
-	margin-bottom:30px;
+	float: left;
+	margin:20px 0;
 }
 .contact-details ul {
 	float:left;
@@ -2053,4 +2059,56 @@ Retina
 #testimonials-slider p {
 	font-size:18px;
 }
+}
+
+
+/* ====================
+Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('../fonts/proximanova-reg-webfont.eot');
+  src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+  url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url('../fonts/proximanova-sbold-webfont.eot');
+  src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-sbold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-sbold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'proxima_nova_blblack';
+  src: url('../fonts/proximanova-black-webfont.eot');
+  src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-black-webfont.woff') format('woff'),
+  url('../fonts/proximanova-black-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
