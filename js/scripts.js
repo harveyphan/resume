@@ -302,7 +302,7 @@ $(document).ready(function(){
 	
 	// your coordinates   --------
 	
-	var Chulan = new google.maps.LatLng(40.761467,-73.956379);	
+	var Chulan = new google.maps.LatLng(21.028045,105.840751);
 	function initialize() {	
 	   var styles = [
     {
@@ -399,7 +399,7 @@ $(document).ready(function(){
 	
 	// your marker coordinates   --------
 	
-	var companyPos = new google.maps.LatLng(40.761467,-73.956379);
+	var companyPos = new google.maps.LatLng(21.028045,105.840751);
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,
 		map: map,
