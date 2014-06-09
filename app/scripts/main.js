@@ -261,40 +261,63 @@ $(document).ready(function(){
 // Contact submit  ----------------------------------------
 
 $("#submit_btn").click(function(){
-  var user_name=$('input[name=name]').val();
-  var user_email=$('input[name=email]').val();
-  var user_message=$('textarea[name=message]').val();
-  var proceed=true;
-  if(user_name==""){
-    $('input[name=name]').css('border','2px solid #F54A4B');
-    proceed=false
-  }
-  if(user_email==""){
-    $('input[name=email]').css('border','2px solid #F54A4B');
-    proceed=false
-  }
-  if(user_message==""){
-    $('textarea[name=message]').css('border','2px solid #F54A4B');
-    proceed=false
-  }
-  if(proceed){
-    post_data={'userName':user_name,'userEmail':user_email,'userMessage':user_message};
-    $.post('php/contact_me.html',
-      post_data,
-      function(data){
-        $("#result").hide().html('<div class="success">'+data+'</div>').fadeIn(700);
-        $('#contact_form input').val('');
-        $('#contact_form textarea').val('')}).fail(
-      function(err){
-        $("#result").hide().html('<div class="error">'+err.statusText+'</div>').fadeIn(1500)
-      });
-  }
-});
 
-$("#contact_form input, #contact_form textarea").keyup(function(){
-  $("#contact_form input, #contact_form textarea").css('border','2px solid #fff');
-  $("#result").fadeOut(700)
-});
+  $('.error').fadeOut('slow'); // reset the error messages (hides them)
+
+  var error = false; // we will set this true if the form isn't valid
+
+  var name = $('input#name').val(); // get the value of the input field
+  if(name == "" || name == " ") {
+    $('#err-name').fadeIn('slow'); // show the error message
+    error = true; // change the error state to true
+  }
+
+  var email_compare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
+  var email = $('input#email').val(); // get the value of the input field
+  if (email == "" || email == " ") { // check if the field is empty
+    $('#err-email').fadeIn('slow'); // error - empty
+    error = true;
+  }else if (!email_compare.test(email)) { // if it's not empty check the format against our email_compare variable
+    $('#err-emailvld').fadeIn('slow'); // error - not right format
+    error = true;
+  }
+
+  var message = $('#message').val(); // get the value of the input field
+  if(message == "" || message == " ") {
+    $('#err-message').fadeIn('slow'); // show the error message
+    error = true; // change the error state to true
+  }
+
+  if(error == true) {
+    $('#err-form').slideDown('slow');
+    return false;
+  }
+
+  var data_string = $('#ajax-form').serialize(); // Collect data from form
+
+  $.ajax({
+    type: "POST",
+    url: $('#ajax-form').attr('action'),
+    data: data_string,
+    timeout: 6000,
+    error: function(request,error) {
+      if (error == "timeout") {
+        $('#err-timedout').slideDown('slow');
+      }
+      else {
+        $('#err-state').slideDown('slow');
+        $("#err-state").html('An error occurred: ' + error + '');
+      }
+    },
+    success: function() {
+      $('#ajax-form').slideUp('slow');
+      $('#ajaxsuccess').slideDown('slow');
+    }
+  });
+
+  return false; // stops user browser being directed to the php file
+
+});// end click function
 
 // google map styles and functions  --------
 
