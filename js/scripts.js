@@ -168,7 +168,7 @@ function initChulan() {
 			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
 		},
 		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
 		}
 	});	
 	
@@ -217,7 +217,7 @@ function initChulan() {
 		scrollOffset: 30,
 		scrollThreshold: 0.5,
 		filter: '',
-		easing: 'swing',
+		easing: 'swing'
 	});
 	
 	var ww = $(window).width();
@@ -231,7 +231,7 @@ function initChulan() {
 			scrollOffset: 30,
 			scrollThreshold: 0.5,
 			filter: '',
-			easing: 'swing',
+			easing: 'swing'
 		});
 		$('.link-holder a').click(function(){
 			setTimeout (function (){				
@@ -249,7 +249,7 @@ function initChulan() {
 		transitionSpeed:700,
 		layoutMode: 'grid',
     	targetDisplayGrid: 'inline-block',
-    	targetDisplayList: 'block',
+    	targetDisplayList: 'block'
 	});
 			
 };
