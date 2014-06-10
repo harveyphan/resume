@@ -11,7 +11,7 @@ $('#main').jpreLoader({
     },2200);
   });
 
-function initChulan() {
+function app() {
 
 // functions ------------------
   "use strict";
@@ -159,6 +159,7 @@ function initChulan() {
 
   $('.popup-gallery').magnificPopup({
     type: 'image',
+    //preloader: [0,2],
     tLoading: 'Loading image #%curr%...',
     removalDelay: 600,
     mainClass: 'my-mfp-slide-bottom',
@@ -255,7 +256,7 @@ function initChulan() {
 };
 
 $(document).ready(function(){
-  initChulan();
+  app();
 });
 
 // Contact submit  ----------------------------------------

@@ -1539,12 +1539,12 @@ Contacts
   position:relative;
   z-index:3;
 }
-#contacts h2 {
-  margin-bottom:30px;
-}
 #contacts h4 {
   font-family: "proxima_nova_rgbold", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
+}
+#contacts h4.margin {
+  margin-bottom:30px;
 }
 .contact-details{
   margin:50px  auto ;
@@ -2137,6 +2137,16 @@ Smartphone / small tablet
     width:100%;
   }
   #project-slider .owl-next ,#project-slider .owl-prev {display:none}
+
+  .social-list ul li {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .social-list ul li span {
+    text-align: center;
+  }
 
 }
 /* ====================
