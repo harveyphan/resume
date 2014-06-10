@@ -260,176 +260,178 @@ $(document).ready(function(){
 
 // Contact submit  ----------------------------------------
 
-$("#submit_btn").click(function(){
+//$("#submit_btn").click(function(){
+//
+//  $('.error').fadeOut('slow'); // reset the error messages (hides them)
+//
+//  var error = false; // we will set this true if the form isn't valid
+//
+//  var name = $('input#name').val(); // get the value of the input field
+//  if(name == "" || name == " ") {
+//    $('#err-name').fadeIn('slow'); // show the error message
+//    error = true; // change the error state to true
+//  }
+//
+//  var email_compare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
+//  var email = $('input#email').val(); // get the value of the input field
+//  if (email == "" || email == " ") { // check if the field is empty
+//    $('#err-email').fadeIn('slow'); // error - empty
+//    error = true;
+//  }else if (!email_compare.test(email)) { // if it's not empty check the format against our email_compare variable
+//    $('#err-emailvld').fadeIn('slow'); // error - not right format
+//    error = true;
+//  }
+//
+//  var message = $('#message').val(); // get the value of the input field
+//  if(message == "" || message == " ") {
+//    $('#err-message').fadeIn('slow'); // show the error message
+//    error = true; // change the error state to true
+//  }
+//
+//  if(error == true) {
+//    $('#err-form').slideDown('slow');
+//    return false;
+//  }
+//
+//  var data_string = $('#ajax-form').serialize(); // Collect data from form
+//
+//  $.ajax({
+//    type: "POST",
+//    url: $('#ajax-form').attr('action'),
+//    data: data_string,
+//    timeout: 6000,
+//    error: function(request,error) {
+//      if (error == "timeout") {
+//        $('#err-timedout').slideDown('slow');
+//      }
+//      else {
+//        $('#err-state').slideDown('slow');
+//        $("#err-state").html('An error occurred: ' + error + '');
+//      }
+//    },
+//    success: function() {
+//      $('#ajax-form').slideUp('slow');
+//      $('#ajaxsuccess').slideDown('slow');
+//    }
+//  });
+//
+//  return false; // stops user browser being directed to the php file
+//
+//});
 
-  $('.error').fadeOut('slow'); // reset the error messages (hides them)
+// //end click function
 
-  var error = false; // we will set this true if the form isn't valid
+// //google map styles and functions  --------
 
-  var name = $('input#name').val(); // get the value of the input field
-  if(name == "" || name == " ") {
-    $('#err-name').fadeIn('slow'); // show the error message
-    error = true; // change the error state to true
-  }
-
-  var email_compare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
-  var email = $('input#email').val(); // get the value of the input field
-  if (email == "" || email == " ") { // check if the field is empty
-    $('#err-email').fadeIn('slow'); // error - empty
-    error = true;
-  }else if (!email_compare.test(email)) { // if it's not empty check the format against our email_compare variable
-    $('#err-emailvld').fadeIn('slow'); // error - not right format
-    error = true;
-  }
-
-  var message = $('#message').val(); // get the value of the input field
-  if(message == "" || message == " ") {
-    $('#err-message').fadeIn('slow'); // show the error message
-    error = true; // change the error state to true
-  }
-
-  if(error == true) {
-    $('#err-form').slideDown('slow');
-    return false;
-  }
-
-  var data_string = $('#ajax-form').serialize(); // Collect data from form
-
-  $.ajax({
-    type: "POST",
-    url: $('#ajax-form').attr('action'),
-    data: data_string,
-    timeout: 6000,
-    error: function(request,error) {
-      if (error == "timeout") {
-        $('#err-timedout').slideDown('slow');
-      }
-      else {
-        $('#err-state').slideDown('slow');
-        $("#err-state").html('An error occurred: ' + error + '');
-      }
-    },
-    success: function() {
-      $('#ajax-form').slideUp('slow');
-      $('#ajaxsuccess').slideDown('slow');
-    }
-  });
-
-  return false; // stops user browser being directed to the php file
-
-});// end click function
-
-// google map styles and functions  --------
-
-var map;
+//var map;
 
 // your coordinates   --------
 
-var Chulan = new google.maps.LatLng(21.028045,105.840751);
-function initialize() {
-  var styles = [
-    {
-      featureType: 'water',
-      elementType: 'all',
-      stylers: [
-        { hue: '#cdcdcd' },
-        { saturation: -100 },
-        { lightness: 18 },
-        { visibility: 'on' }
-      ]
-    },{
-      featureType: 'landscape',
-      elementType: 'all',
-      stylers: [
-        { hue: '#e8e8e8' },
-        { saturation: -100 },
-        { lightness: 18 },
-        { visibility: 'on' }
-      ]
-    },{
-      featureType: 'road',
-      elementType: 'all',
-      stylers: [
-        { hue: '#fdfdfd' },
-        { saturation: -100 },
-        { lightness: -1 },
-        { visibility: 'on' }
-      ]
-    },{
-      featureType: 'road.local',
-      elementType: 'all',
-      stylers: [
-        { hue: '#fdfdfd' },
-        { saturation: -100 },
-        { lightness: -1 },
-        { visibility: 'on' }
-      ]
-    },{
-      featureType: 'poi.park',
-      elementType: 'all',
-      stylers: [
-        { hue: '#c0c0c0' },
-        { saturation: -100 },
-        { lightness: -3 },
-        { visibility: 'on' }
-      ]
-    },{
-      featureType: 'poi',
-      elementType: 'all',
-      stylers: [
-        { hue: '#c0c0c0' },
-        { saturation: -100 },
-        { lightness: -3 },
-        { visibility: 'on' }
-      ]
-    },{
-      featureType: 'transit',
-      elementType: 'all',
-      stylers: [
-        { hue: '#ffffff' },
-        { saturation: -100 },
-        { lightness: -9 },
-        { visibility: 'on' }
-      ]
-    }
-
-  ];
-  var mapOptions = {
-    zoom:17,
-    zoomControl: true,
-    scaleControl: false,
-    scrollwheel: false,
-    disableDefaultUI:true,
-    center: Chulan,
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
-    }
-  };
-  map = new google.maps.Map(document.getElementById("map_canvas"),
-    mapOptions);
-  var styledMapOptions = {
-    name: "Chulan"
-  }
-  var jayzMapType = new google.maps.StyledMapType(
-    styles, styledMapOptions);
-  map.mapTypes.set('bestfromgoogle', jayzMapType);
-  map.setMapTypeId('bestfromgoogle');
-  var companyImage = new google.maps.MarkerImage('images/marker.png',
-    new google.maps.Size(64,64),
-    new google.maps.Point(0,0),
-    new google.maps.Point(64,64)
-  );
-
-  // your marker coordinates   --------
-
-  var companyPos = new google.maps.LatLng(21.028045,105.840751);
-  var companyMarker = new google.maps.Marker({
-    position: companyPos,
-    map: map,
-    icon: companyImage,
-    zIndex: 3
-  });
-}
+//var Chulan = new google.maps.LatLng(21.028045,105.840751);
+//function initialize() {
+//  var styles = [
+//    {
+//      featureType: 'water',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#cdcdcd' },
+//        { saturation: -100 },
+//        { lightness: 18 },
+//        { visibility: 'on' }
+//      ]
+//    },{
+//      featureType: 'landscape',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#e8e8e8' },
+//        { saturation: -100 },
+//        { lightness: 18 },
+//        { visibility: 'on' }
+//      ]
+//    },{
+//      featureType: 'road',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#fdfdfd' },
+//        { saturation: -100 },
+//        { lightness: -1 },
+//        { visibility: 'on' }
+//      ]
+//    },{
+//      featureType: 'road.local',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#fdfdfd' },
+//        { saturation: -100 },
+//        { lightness: -1 },
+//        { visibility: 'on' }
+//      ]
+//    },{
+//      featureType: 'poi.park',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#c0c0c0' },
+//        { saturation: -100 },
+//        { lightness: -3 },
+//        { visibility: 'on' }
+//      ]
+//    },{
+//      featureType: 'poi',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#c0c0c0' },
+//        { saturation: -100 },
+//        { lightness: -3 },
+//        { visibility: 'on' }
+//      ]
+//    },{
+//      featureType: 'transit',
+//      elementType: 'all',
+//      stylers: [
+//        { hue: '#ffffff' },
+//        { saturation: -100 },
+//        { lightness: -9 },
+//        { visibility: 'on' }
+//      ]
+//    }
+//
+//  ];
+//  var mapOptions = {
+//    zoom:17,
+//    zoomControl: true,
+//    scaleControl: false,
+//    scrollwheel: false,
+//    disableDefaultUI:true,
+//    center: Chulan,
+//    mapTypeControlOptions: {
+//      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
+//    }
+//  };
+//  map = new google.maps.Map(document.getElementById("map_canvas"),
+//    mapOptions);
+//  var styledMapOptions = {
+//    name: "Chulan"
+//  }
+//  var jayzMapType = new google.maps.StyledMapType(
+//    styles, styledMapOptions);
+//  map.mapTypes.set('bestfromgoogle', jayzMapType);
+//  map.setMapTypeId('bestfromgoogle');
+//  var companyImage = new google.maps.MarkerImage('images/marker.png',
+//    new google.maps.Size(64,64),
+//    new google.maps.Point(0,0),
+//    new google.maps.Point(64,64)
+//  );
+//
+//  // your marker coordinates   --------
+//
+//  var companyPos = new google.maps.LatLng(21.028045,105.840751);
+//  var companyMarker = new google.maps.Marker({
+//    position: companyPos,
+//    map: map,
+//    icon: companyImage,
+//    zIndex: 3
+//  });
+//}
 //  definition of mobile browser------------------
 
 var isMobile = {

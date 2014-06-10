@@ -1530,8 +1530,9 @@ Contacts
 --------------------------------------------------------------*/
 
 #contacts{
-  padding:0;
+  /*padding:0;*/
   background:#585F73;
+  color: #fff;
 }
 #contacts div.content{
   padding:30px 0;
@@ -1540,6 +1541,10 @@ Contacts
 }
 #contacts h2 {
   margin-bottom:30px;
+}
+#contacts h4 {
+  font-family: "proxima_nova_rgbold", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
 }
 .contact-details{
   margin:50px  auto ;
@@ -1744,34 +1749,40 @@ Footer
   border-width: 50px;
   margin-left: -50px;
 }
+#footer .content .copy-right {
+  margin-top: 50px;
+  position: relative;
+}
 #footer p {
   font-size:14px;
   color:#fff;
 }
 .social-list{
   width:100%;
-  margin-top:80px;
-  padding-bottom:20px;
+  margin-top:30px;
 }
 .social-list ul {
   position:relative;
   z-index:3;
 }
 .social-list ul li {
-  margin-left:4px;
+  margin-left:13px;
   display:inline-block;
+  line-height: 27px;
+  vertical-align: top;
 }
-.social-list ul li a{
+.social-list ul li span{
   float:left;
   border-bottom:4px solid #ccc;
   background:#fff;
-  width:50px;
-  height:50px;
-  border-radius:100%;
-  font-size:18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 15px;
+  margin-right: 6px;
 }
 .social-list ul li i{
-  line-height:50px;
+  line-height:27px;
 }
 .social-list ul li a:hover{
   color:#ccc;
