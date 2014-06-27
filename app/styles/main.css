@@ -28,9 +28,9 @@ html{
 body{
   margin: 0;
   padding: 0;
-  font-family: 'proxima_nova_rgregular', "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Rosario', "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.125em;
   color: #666;
   background:#fff;
   height:100%;
@@ -44,6 +44,9 @@ body{
 /* ====================
 Typography
 --------------------------------------------------------------*/
+h2,h3,h4 {
+  font-family: 'Rosario', "Times New Roman", serif;
+}
 h1 {
   font-family: 'proxima_nova_blblack', "Helvetica Neue", Arial, sans-serif;
   font-size: 4.46666666667em;
@@ -52,19 +55,19 @@ h1 {
   line-height: 1.17em;
 }
 h2 {
-  font-family: 'proxima_nova_blblack', "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
   font-size: 2.2em;
   letter-spacing: 0.10em;
   text-transform:uppercase;
 }
 h3 {
-  font-family: 'proxima_nova_ltsemibold', "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.20em;
 }
 h4 {
-  font-family: 'proxima_nova_ltsemibold', "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
   font-size: 0.9em;
   text-transform: uppercase;
 }
@@ -82,6 +85,7 @@ h1.animtext{
   color:#fff;
 }
 h3.animtext{
+  font-family: 'proxima_nova_ltsemibold', "Helvetica Neue", Arial, sans-serif;
   margin-top:20px;
 }
 .color-white{
@@ -495,10 +499,11 @@ About
   margin-bottom:20px;
 }
 #about h3 {
-  font-family: 'proxima_nova_blblack';
-  font-size: 1.5em;
+  font-family: 'Rosario';
+  font-size: 1.25em;
   letter-spacing: normal;
   text-align:left;
+  text-transform: none;
   margin-bottom:20px;
 }
 #about h3 span {
@@ -948,10 +953,10 @@ Resume
   position:relative;
 }
 #resume div.grid-full .first {
-  margin-top: 38px;
+  margin-top: 48px;
 }
 #resume div.grid-full .third {
-  margin-top: 23px;
+  margin-top: 29px;
 }
 .place-holder{
   margin-bottom:40px;
@@ -1012,6 +1017,7 @@ Resume
 }
 .resume-info h4{
   text-transform: none;
+  font-weight: 400;
 }
 .resume-info p {
   font-size:0.8em;
@@ -1447,8 +1453,7 @@ testimonials
   padding:10px 0;
 }
 #testimonials-slider p {
-  font-size:20px;
-  font-family: "Times New Roman", Times, serif; font-style: italic;
+  font-size:1.125em;
   padding:8px;
   margin-top:30px;
   color:#fff;
@@ -1540,8 +1545,8 @@ Contacts
   z-index:3;
 }
 #contacts h4 {
-  font-family: "proxima_nova_rgbold", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.125em;
+  text-transform: none;
 }
 #contacts h4.margin {
   margin-bottom:30px;
@@ -2148,6 +2153,14 @@ Smartphone / small tablet
     text-align: center;
   }
 
+  #about h3 {
+    font-size: 0.9em;
+  }
+
+  #contacts .content .container h4 {
+    font-size: 0.9em;
+  }
+
 }
 /* ====================
 Retina
@@ -2166,20 +2179,6 @@ Retina
 /* ====================
 Fonts
 --------------------------------------------------------------*/
-
-@font-face {
-  font-family: 'proxima_nova_rgregular';
-  src: url('../fonts/proximanova-reg-webfont.eot');
-  src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/proximanova-reg-webfont.woff') format('woff'),
-  url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
 
 @font-face {
   font-family: 'proxima_nova_ltsemibold';
@@ -2203,14 +2202,4 @@ Fonts
 
 }
 
-@font-face {
-  font-family: 'proxima_nova_blblack';
-  src: url('../fonts/proximanova-black-webfont.eot');
-  src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/proximanova-black-webfont.woff') format('woff'),
-  url('../fonts/proximanova-black-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-
-}
 
