@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67dd2679-e9f8-404d-a08f-5ea74d86ac1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
     </list>
     <ignored path="resume.iws" />
@@ -26,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24177949" vertical-offset="9478" max-vertical-offset="10752">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="9478" max-vertical-offset="10752">
               <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
               <folding />
             </state>
@@ -46,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="34330" max-vertical-offset="35376">
-              <caret line="2180" column="64" selection-start-line="2180" selection-start-column="64" selection-end-line="2180" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.10206085" vertical-offset="696" max-vertical-offset="35744">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -73,8 +72,8 @@
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/projects/napwha.html" />
         <option value="$PROJECT_DIR$/app/scripts/main.js" />
-        <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.css" />
       </list>
     </option>
   </component>
@@ -111,8 +110,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -133,6 +130,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,12 +295,13 @@
       <workItem from="1403249652935" duration="4000" />
       <workItem from="1403495321437" duration="87000" />
       <workItem from="1403871907358" duration="9000" />
-      <workItem from="1403873440051" duration="2610000" />
+      <workItem from="1403873440051" duration="2801000" />
+      <workItem from="1403948030363" duration="1561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22828000" />
+    <option name="totallyTimeSpent" value="24580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1184" extended-state="6" />
@@ -352,6 +352,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9478" max-vertical-offset="10752">
+          <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="7760">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34330" max-vertical-offset="35376">
+          <caret line="2180" column="64" selection-start-line="2180" selection-start-column="64" selection-end-line="2180" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="9446" max-vertical-offset="10720">
@@ -622,18 +646,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34330" max-vertical-offset="35376">
-          <caret line="2180" column="64" selection-start-line="2180" selection-start-column="64" selection-end-line="2180" selection-end-column="64" />
+        <state vertical-scroll-proportion="-10.0" vertical-offset="9478" max-vertical-offset="10752">
+          <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24177949" vertical-offset="9478" max-vertical-offset="10752">
-          <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
+        <state vertical-scroll-proportion="0.10206085" vertical-offset="696" max-vertical-offset="35744">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
           <folding />
         </state>
       </provider>
