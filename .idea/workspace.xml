@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67dd2679-e9f8-404d-a08f-5ea74d86ac1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_black_free-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_black_free-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_black_free-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_black_free-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_light_free-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_light_free-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_light_free-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_light_free-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\resume\app\fonts\intro_cond_light_free-webfont.woff" afterPath="" />
     </list>
     <ignored path="resume.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="9478" max-vertical-offset="10752">
+            <state vertical-scroll-proportion="0.0" vertical-offset="9478" max-vertical-offset="10752">
               <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
               <folding />
             </state>
@@ -48,8 +56,8 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10206085" vertical-offset="696" max-vertical-offset="35744">
-              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.3240918" vertical-offset="189" max-vertical-offset="35744">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -130,8 +138,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,16 +304,17 @@
       <workItem from="1403495321437" duration="87000" />
       <workItem from="1403871907358" duration="9000" />
       <workItem from="1403873440051" duration="2801000" />
-      <workItem from="1403948030363" duration="1561000" />
+      <workItem from="1403948030363" duration="1708000" />
+      <workItem from="1403951911667" duration="179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24580000" />
+    <option name="totallyTimeSpent" value="24906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1184" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -352,6 +361,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10752">
+          <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="7760">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="35744">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="9478" max-vertical-offset="10752">
@@ -648,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="9478" max-vertical-offset="10752">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9478" max-vertical-offset="10752">
           <caret line="608" column="116" selection-start-line="608" selection-start-column="116" selection-end-line="608" selection-end-column="116" />
           <folding />
         </state>
@@ -656,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10206085" vertical-offset="696" max-vertical-offset="35744">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.3240918" vertical-offset="189" max-vertical-offset="35744">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding />
         </state>
       </provider>
