@@ -2153,6 +2153,10 @@ Smartphone / small tablet
     text-align: center;
   }
 
+  h2 {
+    font-size: 1.8em;
+  }
+
   #about h3 {
     font-size: 0.9em;
   }
