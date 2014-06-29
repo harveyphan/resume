@@ -194,6 +194,7 @@ page preload
   left: 50%;
 }
 #jprePercentage {
+  font-family: 'proxima_nova_reg', "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   position:fixed;
   top:50%;
@@ -275,6 +276,7 @@ intro
   margin-bottom:8px;
 }
 .link-holder ul li a {
+  font-family: 'proxima_nova_reg', "Helvetica Neue", Arial, sans-serif;
   border:1px solid #fff;
   width:100%;
   float:left;
@@ -419,6 +421,7 @@ Sidebar
   border-left:4px solid #474D5D;
 }
 .desktop-screen-navigation ul li a {
+  font-family: 'proxima_nova_reg', "Helvetica Neue", Arial, sans-serif;
   color:#fff;
   font-weight:400;
   display:block;
@@ -1759,6 +1762,7 @@ Footer
   position: relative;
 }
 #footer p {
+  font-family: 'proxima_nova_reg', "Helvetica Neue", Arial, sans-serif;
   font-size:14px;
   color:#fff;
 }
@@ -2185,6 +2189,17 @@ Fonts
 --------------------------------------------------------------*/
 
 @font-face {
+  font-family: 'proxima_nova_reg';
+  src: url('../fonts/proximanova-reg-webfont.eot');
+  src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+  url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
   font-family: 'proxima_nova_ltsemibold';
   src: url('../fonts/proximanova-sbold-webfont.eot');
   src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -2206,27 +2221,5 @@ Fonts
 
 }
 
-/*@font-face {*/
-  /*font-family: 'a.cg_proregular';*/
-  /*src: url('../fonts/a.cg_pro-webfont.eot');*/
-  /*src: url('../fonts/a.cg_pro-webfont.eot?#iefix') format('embedded-opentype'),*/
-  /*url('../fonts/a.cg_pro-webfont.woff') format('woff'),*/
-  /*url('../fonts/a.cg_pro-webfont.ttf') format('truetype'),*/
-  /*url('../fonts/a.cg_pro-webfont.svg#adam.cg_proregular') format('svg');*/
-  /*font-weight: normal;*/
-  /*font-style: normal;*/
 
-/*}*/
-
-/*@font-face {*/
-  /*font-family: 'intro_condblack_free';*/
-  /*src: url('../fonts/intro_cond_black_free-webfont.eot');*/
-  /*src: url('../fonts/intro_cond_black_free-webfont.eot?#iefix') format('embedded-opentype'),*/
-  /*url('../fonts/intro_cond_black_free-webfont.woff') format('woff'),*/
-  /*url('../fonts/intro_cond_black_free-webfont.ttf') format('truetype'),*/
-  /*url('../fonts/intro_cond_black_free-webfont.svg#intro_condblack_free') format('svg');*/
-  /*font-weight: normal;*/
-  /*font-style: normal;*/
-
-/*}*/
 
